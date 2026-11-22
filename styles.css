@@ -227,7 +227,93 @@ body {
   padding: 5rem 0 3.5rem 0;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
+}
+
+.hero-avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.avatar-ring {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.7) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(168, 85, 247, 0.6) 100%);
+  box-shadow: 0 0 36px -4px rgba(56, 189, 248, 0.35), 0 20px 36px -10px rgba(0, 0, 0, 0.85);
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.avatar-ring:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 44px -2px rgba(56, 189, 248, 0.5), 0 24px 44px -8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background: #0E0E14;
+}
+
+.avatar-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.avatar-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink-bright);
+}
+
+.avatar-role {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 900px) {
+  .hero-header-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .avatar-ring {
+    width: 135px;
+    height: 135px;
+  }
+  .hero-avatar-wrapper {
+    align-items: flex-start;
+  }
+  .avatar-caption {
+    align-items: flex-start;
+  }
 }
 
 .availability-badge {
