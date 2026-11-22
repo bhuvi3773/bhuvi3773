@@ -1,0 +1,20 @@
+{
+  "name": "venkata-bhuvan-portfolio",
+  "version": "1.0.0",
+  "description": "Personal developer portfolio of Venkata Bhuvan Lolla — Full-Stack & AI/ML Software Engineer.",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "full-stack",
+    "ai-ml",
+    "nextjs",
+    "react",
+    "prisma"
+  ],
+  "author": "Venkata Bhuvan Lolla",
+  "license": "MIT"
+}

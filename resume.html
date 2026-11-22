@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Venkata Bhuvan Lolla</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #4B5563;
+      --line: #E5E7EB;
+      --accent: #2563EB;
+      --paper: #FFFFFF;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: ui-monospace, "JetBrains Mono", Consolas, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: var(--font);
+      background-color: #F3F4F6;
+      color: var(--ink);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .toolbar {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--accent);
+      color: #FFF;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn.back {
+      background-color: #FFF;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .resume-sheet {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--paper);
+      padding: 3rem 3.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    }
+
+    header.resume-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1rem;
+    }
+
+    h1.name {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .headline {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-line {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-family: var(--mono);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .contact-line a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    section.resume-section {
+      margin-bottom: 1.25rem;
+    }
+
+    h2.section-heading {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 0.2rem;
+      margin-bottom: 0.65rem;
+    }
+
+    p.summary-text {
+      font-size: 0.875rem;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.875rem;
+    }
+
+    .skills-row strong {
+      color: var(--ink);
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-sub {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    ul.bullets {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.84375rem;
+      line-height: 1.5;
+    }
+
+    ul.bullets li {
+      margin-bottom: 0.25rem;
+    }
+
+    @media print {
+      body { background: #FFF; padding: 0; }
+      .toolbar { display: none; }
+      .resume-sheet {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="/" class="btn back">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn">Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-sheet">
+    <header class="resume-header">
+      <h1 class="name">Venkata Bhuvan Lolla</h1>
+      <div class="headline">Software Development Engineer | Full Stack Developer</div>
+      <div class="contact-line">
+        <span>Vijayawada, AP, India</span>
+        <span>•</span>
+        <a href="tel:+918309600721">+91 8309600721</a>
+        <span>•</span>
+        <a href="mailto:lollavenkatbhuvan@gmail.com">lollavenkatbhuvan@gmail.com</a>
+        <span>•</span>
+        <a href="https://github.com/bhuvi3773" target="_blank">github.com/bhuvi3773</a>
+        <span>•</span>
+        <a href="https://linkedin.com/in/venkat-bhuvan-lolla-019148276" target="_blank">LinkedIn</a>
+        <span>•</span>
+        <a href="https://dtdc-courier.vercel.app" target="_blank">dtdc-courier.vercel.app</a>
+      </div>
+    </header>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Professional Summary</h2>
+      <p class="summary-text">
+        Full Stack Software Engineer (B.Tech CSE – AIML, 2025) building e-commerce and logistics platforms with React, Next.js, TypeScript, Node.js, PostgreSQL and Prisma. Full Stack Developer Intern at OneBridge Infotech with experience in REST API design, authentication and RBAC, payment integration, and deployments on Vercel and Hostinger.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-row"><strong>Languages:</strong> JavaScript (ES6+), TypeScript, Python, SQL</div>
+        <div class="skills-row"><strong>Frontend:</strong> React, Next.js (App Router, SSR), Tailwind CSS, Vite, HTML5, CSS3, Responsive Design</div>
+        <div class="skills-row"><strong>Backend:</strong> Node.js, Express.js, RESTful APIs, JWT, OTP Authentication, Role-Based Access Control (RBAC), Webhooks</div>
+        <div class="skills-row"><strong>Databases & ORM:</strong> PostgreSQL, MongoDB, MySQL, Prisma ORM, Mongoose, Neon (Serverless Postgres)</div>
+        <div class="skills-row"><strong>Hosting & Tools:</strong> Docker, Vercel, Hostinger, Git/GitHub, Postman, Playwright (E2E), Vitest</div>
+        <div class="skills-row"><strong>Fundamentals & AI/ML:</strong> Data Structures & Algorithms, OOP, CNNs, ResNet50, MobileNet, YOLOv3, TensorFlow/Keras, Scikit-Learn, Pandas, NumPy</div>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Experience</h2>
+      
+      <div class="item-header">
+        <span>OneBridge Infotech — Full Stack Developer Intern</span>
+        <span style="font-weight: 500; font-size: 0.8125rem;">2026 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Develop full-stack features for Snappy Gifts, a B2C/B2B e-commerce platform, using React 19, TypeScript, Next.js, PostgreSQL, and Prisma.</li>
+        <li>Lead a phased migration from a Vite SPA to Next.js App Router with SSR and SEO metadata, following batch-based delivery with typecheck, lint, test, and build gates.</li>
+      </ul>
+
+      <div class="item-header">
+        <span>SkillDzire — Deep Learning Intern</span>
+        <span style="font-weight: 500; font-size: 0.8125rem;">Jun 2024 – Jul 2024</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a YOLOv3 traffic sign detection pipeline with real-time inference on images and video feeds.</li>
+      </ul>
+
+      <div class="item-header">
+        <span>Codegyan IT Solutions — Machine Learning Intern</span>
+        <span style="font-weight: 500; font-size: 0.8125rem;">May 2023 – Jul 2023</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a Random Forest property price prediction model with feature selection and hyperparameter tuning.</li>
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Featured Projects</h2>
+
+      <div class="item-header">
+        <span>BookCourier — Bookstore & Intercity Courier Platform</span>
+        <span style="font-size: 0.8125rem; font-weight: normal; color: var(--muted);">Next.js 15, Express 5, Prisma, PostgreSQL, Razorpay</span>
+      </div>
+      <ul class="bullets">
+        <li>Built full-stack courier and bookstore platform with stock-reserving checkout, shipment tracking, QR labels, and GST invoice PDFs. Deployed live at <em>dtdc-courier.vercel.app</em>.</li>
+        <li>Implemented JWT with rotating refresh tokens, OTP login, and six-role RBAC; built carrier routing engine with shipment state-transition matrix.</li>
+      </ul>
+
+      <div class="item-header">
+        <span>GoLive Classes — Online Learning Platform (LMS)</span>
+        <span style="font-size: 0.8125rem; font-weight: normal; color: var(--muted);">Next.js 16, React 19, Prisma, PostgreSQL, Playwright</span>
+      </div>
+      <ul class="bullets">
+        <li>Engineered complete full-stack LMS supporting student enrollments, instructor studio, and superadmin oversight with Playwright automated E2E tests.</li>
+      </ul>
+
+      <div class="item-header">
+        <span>Snappy Gifts — E-Commerce Gifting Platform</span>
+        <span style="font-size: 0.8125rem; font-weight: normal; color: var(--muted);">React 19, Next.js, Prisma, PostgreSQL, Razorpay</span>
+      </div>
+      <ul class="bullets">
+        <li>Engineered B2C and B2B gifting platform with personalized laser-engraved merchandise, corporate bulk CSV dispatch, and integer-paise Razorpay checkout.</li>
+      </ul>
+
+      <div class="item-header">
+        <span>Fetal Health Monitoring — Deep Learning Diagnostic System</span>
+        <span style="font-size: 0.8125rem; font-weight: normal; color: var(--muted);">Python, TensorFlow, ResNet50, MobileNet, Flask, Tkinter</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed ultrasound anomaly classification pipeline with transfer learning, paired with Flask web and Tkinter desktop interfaces for real-time inference.</li>
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Education</h2>
+      <div class="item-header">
+        <span>PSCMR College of Engineering, Vijayawada</span>
+        <span style="font-size: 0.8125rem; font-weight: normal;">2021 – 2025</span>
+      </div>
+      <div class="item-sub">B.Tech, Computer Science & Engineering (AIML) • CGPA: 7.75</div>
+
+      <div class="item-header">
+        <span>Karaparthi Bhavanarayan College, Vijayawada</span>
+        <span style="font-size: 0.8125rem; font-weight: normal;">2019 – 2021</span>
+      </div>
+      <div class="item-sub">Intermediate (10+2) • 95%</div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-heading">Certifications & Achievements</h2>
+      <p class="summary-text" style="font-size: 0.84375rem;">
+        Python Certification (HackerRank) • Machine Learning & Deep Learning Certificate (NPTEL) • Smart India Hackathon Participant
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
